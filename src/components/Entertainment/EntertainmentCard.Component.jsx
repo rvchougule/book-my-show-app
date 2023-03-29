@@ -1,13 +1,19 @@
-import React from 'react'
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
 
 const EntertainmentCard = (props) => {
-  return <>
-    <div>
-      <img className='w-full h-full rounded-lg' src={props.src} alt='entertainment'/>
-    </div>
-  </>
-}
+  return (
+    <>
+      <div>
+        <img
+          className="w-full h-full rounded-lg"
+          src={props.src}
+          alt="entertainment"
+        />
+      </div>
+    </>
+  );
+};
 
 const EntertainmentCardSlider = () => {
   const EntertainmentImage = [
@@ -60,10 +66,12 @@ const EntertainmentCardSlider = () => {
   return (
     <>
       <Slider {...settings}>
-        {EntertainmentImage.map((image) => <EntertainmentCard src={image} />)}
+        {EntertainmentImage.map((image, index) => (
+          <EntertainmentCard src={image} key={index} />
+        ))}
       </Slider>
     </>
   );
-}
+};
 
-export default EntertainmentCardSlider
+export default EntertainmentCardSlider;
