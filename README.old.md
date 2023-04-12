@@ -253,10 +253,54 @@ https://quillbot.com/
 
 
 
-Additionally Resources, What Next ?, GitHub
+Additionally Resources, What Next ?, GitHub, Diff Positions
 Typescript, DevOps
 Payment Gateway Project
 One Last Day (Project Submission)
+DSA 
+
+
+
+## What Next afet Web Tech ?
+1. Next.js
+2. Three.js
+3. Electron (Windows Applicatons)
+4. React Native (IOS and Android Applications)
+5. GSAP or Framer Motion (Animations)
+6. Scaling and DevOps | Sprint Review
+7. Testing for React or JS and Advanced Performance 
+8. DSA
+
+
+## Technical Round For Coding Questions?
+1. Explain the logic
+2. Write the Logic/Code in Brute-Force (Base Level) Approach
+3. Later Optimise the code
+
+
+## Differnent Positions:
+1. Software Engineer
+2. Software Developer
+3. Web Full Stack Developer 
+4. Front-end Developers
+5. Backend Developers
+6. React JS Devlopers
+7. Angular Developers
+8. NodeJs Developers
+9. DBA (Data Base Adminstrator)
+9. Automated Testing
+10. Manual Tester
+11. UI UX Developer
+12. Architect
+
+
+
+## GitHub
+https://rahuldkjain.github.io/gh-profile-readme-generator/
+
+
+
+
 
 
 
