@@ -301,7 +301,10 @@ https://rahuldkjain.github.io/gh-profile-readme-generator/
 
 
 
-
+Friday: Payment Gateway & brief out the project
+Saturday: Devops & DSA
+Sunday: DSA
+Monday: Last Day
 
 
 
