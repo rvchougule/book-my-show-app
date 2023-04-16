@@ -3,6 +3,14 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['ui-sans-serif', 'system-ui'],
+        'serif': ['ui-serif', 'Georgia'],
+        'mono': ['ui-monospace', 'SFMono-Regular'],
+        'sofia':['Sofia Sans Condensed'],
+        'display': ['Oswald'],
+        'body': ['"Open Sans"'],
+      },
       colors: {
         darkBackground: {
           50: "#edf1fc",
