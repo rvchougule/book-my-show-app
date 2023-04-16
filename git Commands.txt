@@ -1,0 +1,4 @@
+=> git checkout -b [branch name]
+=> git add .
+=> git commit -m ""
+=> git push origin [branch name] //it will push the repository to github

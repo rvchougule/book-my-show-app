@@ -11,13 +11,13 @@ const MovieHero = () => {
   return (
     <>
       <div>
-        {/* Mobile and Tab Screen i.e., small and medium screen size */}
+        {/* Mobile and Tab Screen (sm and md) */}
         <div className="lg:hidden w-full">
           <img
             src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
             alt="Cover Poster"
-            className="m-4 rounded"
-            style={{ width: "calc(100%-2rem)" }}
+            className="m-4  rounded"
+            style={{ width: "calc(100%-50vw)", height: "350px"}}
           />
         </div>
         <div className="flex flex-col gap-3 lg:hidden">
@@ -39,7 +39,7 @@ const MovieHero = () => {
             </button>
           </div>
         </div>
-        {/* ctrl+/ */}
+
         {/* Large Screen Size i.e., Laptop */}
         <div
           className="relative hidden w-full lg:block"
@@ -61,7 +61,7 @@ const MovieHero = () => {
                 "
                 />
               </div>
-              <div>
+              <div className="">
                 <MovieInfo movie={movie} />
               </div>
             </div>
