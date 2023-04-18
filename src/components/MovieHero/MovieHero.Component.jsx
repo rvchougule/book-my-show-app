@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { MovieContext } from "../../context/Movie.context";
 import MovieInfo from "./MovieInfo.Component";
+import { BsFillStarFill } from "react-icons/bs";
 
 const MovieHero = () => {
   const { movie } = useContext(MovieContext);
@@ -23,7 +24,13 @@ const MovieHero = () => {
         <div className="flex flex-col gap-3 lg:hidden">
           <div className="flex flex-col-reverse gap-3 px-4 my-3">
             <div className="text-black flex flex-col gap-2 md:px-4">
-              <h4>4.4k rating</h4>
+            <span className="text-red-500 flex flex-row gap-3 text-3xl">
+            <BsFillStarFill />
+            <h3 className="text-2xl text-red font-sans font-bold">
+              7.5/10 |
+            </h3>
+            <h3 className="text-2xl text-red font-sans font-bold">4.4k rating</h3>
+          </span>
               <h4>Kannada, English, Hindi, Telgu, Tamil</h4>
               <h4>
                 {movie.runtime} min | {genres}

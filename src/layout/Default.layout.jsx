@@ -6,7 +6,7 @@ const DefaultLayoutHoc =
   (Component) =>
   ({ ...props }) => {
     return (
-      <div>
+      <div className="overflow-x-hidden">
         <Navbar />
         <MenuNavComponent/>
         <Component {...props} />

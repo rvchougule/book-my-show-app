@@ -66,7 +66,7 @@ function NavLg() {
 const MovieNavbar = () => {
   return (
     <>
-      <nav className="bg-white border-b-2 lg:border-b-0 lg:bg-darkBackground-700 md:bg-darkBackground-700 px-4 py-3">
+      <nav className="border-b-2 lg:border-b-0 lg:bg-darkBackground-700 md:bg-darkBackground-700 px-4 py-3">
         <div className="md:hidden">
           <NavSm />
         </div>

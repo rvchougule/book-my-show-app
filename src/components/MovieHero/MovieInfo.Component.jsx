@@ -24,14 +24,16 @@ const MovieInfo = () => {
   return (
     <>
       <PaymentModal setIsOpen={setIsOpen} isOpen={isOpen} price={price} />;
-      <div className="flex flex-col  max-w-3xl gap-8">
+      <div className="flex flex-col overflow-x-hidden max-w-2xl gap-8">
         <h1 className="text-white flex flex-col text-5xl font-bold">
           {movie.original_title}
         </h1>
         <div className="text-white flex flex-col gap-2">
           <span className="text-red-500 flex flex-row gap-3 text-3xl">
             <BsFillStarFill />
-            <h3 className="text-2xl text-white font-sans font-bold">7.5/10 |</h3>
+            <h3 className="text-2xl text-white font-sans font-bold">
+              7.5/10 |
+            </h3>
             <h3 className="text-xl text-white mt-2 font-sans">4.4k rating</h3>
           </span>
           <h4>Kannada, English, Hindi, Telgu, Tamil</h4>
@@ -39,16 +41,16 @@ const MovieInfo = () => {
             {movie.runtime} min | {genres}
           </h4>
         </div>
-        <div className="flex items-center gap-3 md:px-4 md:w-screen text-xl px-4">
+        <div className="flex items-center gap-3  md:px-4 md:w-screen text-xl px-4">
           <button
             onClick={rentMovie}
-            className="bg-red-500  py-3 text-white font-semibold rounded-lg"
+            className="bg-red-500 text-white font-semibold px-4 py-1 text-md  rounded-lg border border-white-200 hover:text-white hover:bg-red-800 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-white-600 focus:ring-offset-2"
           >
             Rent $149
           </button>
           <button
             onClick={buyMovie}
-            className="bg-red-500  py-3 text-white font-semibold rounded-lg"
+            className="bg-red-500 text-white font-semibold px-4 py-1 text-md  rounded-lg border border-white-200 hover:text-white hover:bg-red-800 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-white-600 focus:ring-offset-2"
           >
             Buy $999
           </button>
