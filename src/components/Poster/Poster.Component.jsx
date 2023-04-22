@@ -31,7 +31,7 @@ const PlayPoster = (props) => {
       target="_blank"
       rel="noreferrer"
     >
-      <div className="flex flex-col items-start gap-2 px-1 md:px-3">
+      <div className="flex flex-col min-w-md items-start gap-2 px-1 md:px-3">
         <div className="h-40 md:h-80">
           <img
             src={props.src}

@@ -12,6 +12,9 @@ module.exports = {
         'body': ['"Open Sans"'],
       },
       colors: {
+        red: {
+          400: "#EC5E71",
+        },
         darkBackground: {
           50: "#edf1fc",
           100: "#d3d4e1",

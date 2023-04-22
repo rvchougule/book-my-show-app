@@ -5,9 +5,6 @@ import { NextArrow, PrevArrow } from "./Arrows.Components";
 const HeroCarousel = () => {
   const [images] = useState([
     {
-      backdrop_path : "https://assets-in.bmscdn.com/promotions/cms/creatives/1681123745909_webbannernpa.jpg",
-    },
-    {
       backdrop_path :"https://assets-in.bmscdn.com/promotions/cms/creatives/1681379292848_miwebold.jpg",
     },
     {
@@ -16,6 +13,9 @@ const HeroCarousel = () => {
     {
       backdrop_path:"https://assets-in.bmscdn.com/promotions/cms/creatives/1681275775568_2plus1web.jpg",
     },
+    {
+      backdrop_path:"https://assets-in.bmscdn.com/promotions/cms/creatives/1681106316328_niyamvatilagudesktop.jpg",
+    }
     
   ]);
 

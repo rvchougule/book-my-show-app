@@ -50,7 +50,7 @@ const MoviePage = () => {
       setMovie(getMovieDate.data);
     };
     requestMovie();
-  }, [id]);
+  }, [id, setMovie]);
 
   const settingsCast = {
     infinite: false,
@@ -172,11 +172,11 @@ const MoviePage = () => {
           <hr />
         </div>
 
-        {/* Recommended Sliders */}
+       
         <div className="my-8">
           <PosterSlider
             config={settings}
-            title="Recommended Movies"
+            title="Similar Movies"
             posters={recommendedMovies}
             isDark={false}
           />
@@ -209,7 +209,7 @@ const MoviePage = () => {
         <PosterSlider
           config={settings}
           title="BMS EXCLUSIVE MOVIES"
-          posters={recommendedMovies}
+          posters={similarMovies}
           isDark={false}
         />
       </div>

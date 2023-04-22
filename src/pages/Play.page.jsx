@@ -1,31 +1,80 @@
+// import React, { useEffect, useState } from "react";
 import React from "react";
 import DefaultLayoutHoc from "../layout/Default.layout";
+// import axios from "axios";
 
 // components
 import Poster from "../components/Poster/Poster.Component";
 import PlayFilters from "../components/PlayFilters/PlayFilters.Component";
 import HeroCarousel from "../components/HeroCarousel/HeroCarousel.Component";
-
+// import PosterSlider from "../components/PosterSlider/PosterSlider.Component";
+// import PlayPoster from "../components/Poster/PlayPoster.Component";
 
 const PlayPage = () => {
+  // const [recommendedMovies, setRecommendedMovies] = useState([]);
+  // useEffect(() => {
+  //   const requestTopRatedMovies = async () => {
+  //     const getTopRatedMovies = await axios.get("/movie/top_rated");
+  //     setRecommendedMovies(getTopRatedMovies.data.results);
+  //   };
+  //   requestTopRatedMovies();
+  // }, []);
+
   return (
     <>
       <HeroCarousel />
       <div className="container mx-auto overflow-x-hidden mx-0 px-0 my-2">
         <div className="row mx-0 px-0">
           <div className="col-3 hidden md:flex lg:flex">
-            <div className="lg:w-1/4 p-4 bg-white rounded">
+            <div className="w-full h-auto rounded">
               <h2 className="text-2xl font-bold mb-4">Filters</h2>
-              <div>
+
+              <div className="bg-white p-2 rounded-lg my-2 ">
                 <PlayFilters
                   title="Date"
                   tags={["Today", "Tomorrow", "This Weekend"]}
                 />
               </div>
-              <div>
+              <div className="bg-white p-2 rounded-lg my-2">
                 <PlayFilters
                   title="Language"
                   tags={["English", "Kannada", "Hindi", "Telgu"]}
+                />
+              </div>
+              <div className="bg-white p-2 rounded-lg my-2">
+                <PlayFilters
+                  title="Categories"
+                  tags={["Theatre", "Storytelling"]}
+                />
+              </div>
+              <div className="bg-white p-2 rounded-lg my-2">
+                <PlayFilters
+                  title="Genres"
+                  tags={[
+                    "Drama",
+                    "Comedy",
+                    "Suspense",
+                    "Thriller",
+                    "Broadway",
+                    "Fantasy",
+                    "Adventure",
+                    "Historical",
+                    "Musical",
+                    "Regional",
+                    "Romantic",
+                  ]}
+                />
+              </div>
+              <div className="bg-white p-2 rounded-lg my-2">
+                <PlayFilters
+                  title="More Filters"
+                  tags={["Outdoor Events", "Fast Filling", "Kids Allowed"]}
+                />
+              </div>
+              <div className="bg-white p-2 rounded-lg my-2">
+                <PlayFilters
+                  title="Price"
+                  tags={["Free", "0 - 500", "501 - 2000", "Above 2000"]}
                 />
               </div>
             </div>
@@ -34,6 +83,16 @@ const PlayPage = () => {
             <div className="w-full flex flex-col lg:flex-col gap-4">
               <h2 className="text-2xl  font-bold mb-4">Plays in Hospet</h2>
               <div className="flex flex-wrap">
+                {/* <div className="w-1/2 md:w-8/12 lg:w-8/12 my-3 absolute items-center">
+                  <PlayPoster
+                    isPlay={true}
+                    title="Recommended Movies"
+                    subtitle="List of recommonded movies"
+                    posters={recommendedMovies}
+                    isDark={false}
+                  />
+                </div> */}
+
                 <div className="w-1/2 md:w-2/4 lg:w-4/12 my-3 flex items-center">
                   <Poster
                     isPlay={true}
@@ -87,22 +146,58 @@ const PlayPage = () => {
           </div>
         </div>
         <div className="sm:col-12  md:hidden lg:hidden">
-            <div className="lg:w-1/4 p-4 bg-white rounded">
-              <h2 className="text-2xl font-bold mb-4">Filters</h2>
-              <div>
-                <PlayFilters
-                  title="Date"
-                  tags={["Today", "Tomorrow", "This Weekend"]}
-                />
-              </div>
-              <div>
-                <PlayFilters
-                  title="Language"
-                  tags={["English", "Kannada", "Hindi", "Telgu"]}
-                />
-              </div>
+          <div className="w-full h-auto rounded">
+            <h2 className="text-2xl font-bold mb-4">Filters</h2>
+            <div className="bg-white p-2 rounded-lg my-2 ">
+              <PlayFilters
+                title="Date"
+                tags={["Today", "Tomorrow", "This Weekend"]}
+              />
+            </div>
+            <div className="bg-white p-2 rounded-lg my-2">
+              <PlayFilters
+                title="Language"
+                tags={["English", "Kannada", "Hindi", "Telgu"]}
+              />
+            </div>
+            <div className="bg-white p-2 rounded-lg my-2">
+              <PlayFilters
+                title="Categories"
+                tags={["Theatre", "Storytelling"]}
+              />
+            </div>
+            <div className="bg-white p-2 rounded-lg my-2">
+              <PlayFilters
+                title="Genres"
+                tags={[
+                  "Drama",
+                  "Comedy",
+                  "Suspense",
+                  "Thriller",
+                  "Broadway",
+                  "Fantasy",
+                  "Adventure",
+                  "Historical",
+                  "Musical",
+                  "Regional",
+                  "Romantic",
+                ]}
+              />
+            </div>
+            <div className="bg-white p-2 rounded-lg my-2">
+              <PlayFilters
+                title="More Filters"
+                tags={["Outdoor Events", "Fast Filling", "Kids Allowed"]}
+              />
+            </div>
+            <div className="bg-white p-2 rounded-lg my-2">
+              <PlayFilters
+                title="Price"
+                tags={["Free", "0 - 500", "501 - 2000", "Above 2000"]}
+              />
             </div>
           </div>
+        </div>
       </div>
     </>
   );
